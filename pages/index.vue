@@ -13,6 +13,9 @@
         </section>
 
         <section id="contact">
+            <ObContact :data="contact"></ObContact>
+        </section>
+        <section id="data">
             home:
             {{ home }}
             <br>
