@@ -1,6 +1,6 @@
 <template>
     <footer>
-        Copyright &copy; 2021 Allandt Bik-Elliott
+        Copyright &copy; 2020 - {{ new Date().getFullYear() }} Allandt Bik-Elliott
     </footer>
 </template>
 
