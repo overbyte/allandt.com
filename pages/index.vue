@@ -12,6 +12,9 @@
             <ObJob @filterByTag="filterByTag" v-for="job in jobs" :key="job.id" :job="job"></ObJob>
         </section>
 
+        <section id="about">
+            <ObAbout :data="about"></ObAbout>
+        </section>
         <section id="contact">
             <ObContact :data="contact"></ObContact>
         </section>
@@ -22,6 +25,10 @@
             <br>
             jobs:
             {{ jobs }}
+            <br>
+            <br>
+            about:
+            {{ about }}
             <br>
             <br>
             contact:
@@ -48,6 +55,8 @@ export default {
                                 : -1),
                     home: res.data.stories
                         .filter(item => item.name === 'home')[0].content,
+                    about: res.data.stories
+                        .filter(item => item.name === 'about')[0].content,
                     contact: res.data.stories
                         .filter(item => item.name === 'contact')[0].content,
                 };
@@ -82,7 +91,7 @@ export default {
 #work {
     color: var(--tertiary);
 }
-#contact {
+#data {
     color: black;
 }
 </style>
