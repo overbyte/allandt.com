@@ -1,16 +1,20 @@
 <template>
     <div class="job">
-        <h2>{{ job.content.title }}</h2>
-        <h3>{{ job.content.type }}</h3>
-        <h4>{{ job.content.agency }} 
-            | {{ job.content.client }} 
-            | {{ job.content.year }}
-        </h4>
-        <p>{{ job.content.body }}</p>
-        <ul class="taglist">
-            <li class="tag" v-for="tag in job.tag_list"
-                @click="$emit('filterByTag', tag)">{{ tag }}</li>
-        </ul>
+        <div class="content">
+            <h2>{{ job.content.title }}</h2>
+            <h3>{{ job.content.type }}</h3>
+            <h4>{{ job.content.agency }} 
+                | {{ job.content.client }} 
+                | {{ job.content.year }}
+            </h4>
+            <p>{{ job.content.body }}</p>
+            <ul class="taglist">
+                <li class="tag" v-for="tag in job.tag_list"
+                    @click="$emit('filterByTag', tag)">{{ tag }}</li>
+            </ul>
+        </div>
+        <img v-if="job.content.thumbnail && job.content.thumbnail.filename" 
+            :src="job.content.thumbnail.filename" alt="">
     </div>
 </template>
 
@@ -27,6 +31,9 @@ export default {
     padding: 2rem;
     border-bottom: 1px solid var(--primary);
     background-color: var(--background);
+
+    display: flex;
+    flex-wrap: wrap;
 
     h2 {
         margin-top: 0;
@@ -47,6 +54,14 @@ export default {
 
     p {
         color: var(--primary);
+    }
+
+    img {
+        width: 33%;
+    }
+
+    .content {
+        width: 67%;
     }
 
     .taglist {
