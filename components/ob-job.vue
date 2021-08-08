@@ -1,5 +1,10 @@
 <template>
     <div class="job">
+        <div class="job-image">
+            <img v-if="job.content.thumbnail && job.content.thumbnail.filename" 
+                :src="job.content.thumbnail.filename" alt="">
+        </div>
+
         <div class="content">
             <h2>{{ job.content.title }}</h2>
             <h3>{{ job.content.type }}</h3>
@@ -13,8 +18,6 @@
                     @click="$emit('filterByTag', tag)">{{ tag }}</li>
             </ul>
         </div>
-        <img v-if="job.content.thumbnail && job.content.thumbnail.filename" 
-            :src="job.content.thumbnail.filename" alt="">
     </div>
 </template>
 
@@ -33,7 +36,6 @@ export default {
     background-color: var(--background);
 
     display: flex;
-    flex-wrap: wrap;
 
     h2 {
         margin-top: 0;
@@ -57,11 +59,18 @@ export default {
     }
 
     img {
-        width: 33%;
+        transition: transform 0.3s ease-out;
+        width: 100%;
+        transform: rotate(-2deg) 
+                   scale(0.9);
+    }
+    .job-image {
+        flex: 1;
     }
 
     .content {
-        width: 67%;
+        flex: 2;
+        width: 66vw;
     }
 
     .taglist {
