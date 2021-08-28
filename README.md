@@ -9,10 +9,11 @@
 This project requires the following environment variables to access Storyblok
 CMS API:
 * SB_TOKEN
-* SB_CV
 
 For local testing, these should be stored in a `.env` file in the root of the
 project and not committed to GIT.
+For deployment, this should be added to the environment before running the
+generate command
 
 These can be found at https://app.storyblok.com/#!/me/spaces/103220/edit?tab=api
 and on the most recent publish json in Storyblok
