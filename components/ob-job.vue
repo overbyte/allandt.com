@@ -1,8 +1,8 @@
 <template>
     <div class="job">
-        <div class="job-image">
-            <img v-if="job.content.thumbnail && job.content.thumbnail.filename" 
-                :src="job.content.thumbnail.filename" alt="">
+        <div v-if="job.content.thumbnail && job.content.thumbnail.filename" class="job-image">
+            <img :src="job.content.thumbnail.filename" alt="">
+           <iframe width="560" height="315" :src="job.content.video" title="job.content.title" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
         </div>
 
         <div class="content">
