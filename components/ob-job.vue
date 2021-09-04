@@ -2,7 +2,6 @@
     <div class="job">
         <div v-if="job.content.thumbnail && job.content.thumbnail.filename" class="job-image">
             <img :src="job.content.thumbnail.filename" alt="">
-           <iframe width="560" height="315" class="job-video" :src="job.content.video" :title="job.content.title" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <div class="content">
@@ -13,6 +12,7 @@
                 | {{ job.content.year }}
             </h4>
             <p>{{ job.content.body }}</p>
+            <iframe width="560" height="315" class="job-video" :src="job.content.video" :title="job.content.title" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <ul class="taglist">
                 <li class="tag" v-for="tag in job.tag_list"
                     @click="$emit('filterByTag', tag)">{{ tag }}</li>
