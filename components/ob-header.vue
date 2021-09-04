@@ -39,6 +39,7 @@ export default {
     font-weight: 600;
     transition: padding 0.5s,
                 background-color 0.5s;
+    z-index: 1;
 
     &.sticky {
         padding: 0.1em 1em;
