@@ -67,9 +67,6 @@ export default {
     .job-image {
         flex: 1;
     }
-    .job-video {
-        position: absolute;
-    }
 
     .content {
         flex: 2;
