@@ -18,22 +18,6 @@
         <section id="contact">
             <ObContact :data="contact"></ObContact>
         </section>
-        <section id="data">
-            home:
-            {{ home }}
-            <br>
-            <br>
-            jobs:
-            {{ jobs }}
-            <br>
-            <br>
-            about:
-            {{ about }}
-            <br>
-            <br>
-            contact:
-            {{ contact }}
-        </section>
     </div>
 </template>
 
