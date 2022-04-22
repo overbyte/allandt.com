@@ -1,8 +1,8 @@
-# overbyte.co.uk
+# allandt.com
 
 # Deploy status
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c38c2f58-7011-436b-bf55-0113a9fb2bd3/deploy-status)](https://app.netlify.com/sites/overbytecouk/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c38c2f58-7011-436b-bf55-0113a9fb2bd3/deploy-status)](https://app.netlify.com/sites/allandt/deploys)
 
 ## Requirements
 
