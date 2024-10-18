@@ -22,7 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        <header>Allandt.com</header>
+        <main>{children}</main>
+        <footer>Copyright &copy; {new Date().getFullYear()}</footer>
+      </body>
     </html>
   );
 }
