@@ -11,31 +11,15 @@ datasource db {
 }
 
 
-model User {
-  id        Int  @id @default(autoincrement())
-  role      UserRole @default("User")
-  name      String
-  email     String @unique
-  password  String
-}
-
-model Profile {
-  id     Int @id @default(autoincrement())
-  bio    String 
-  user   User
-  userId Int @unique
-}
-
 model Project {
   id           Int @id @default(autoincrement())
   title        String
-  type         ProjectType @default("Developer")
+  type         String
   agency       String
   client       String
   description  String
   summary      String
   year         Int
-  thumbnail    Asset?
   gallery      Asset[]
   video        String?
   tags         Tag[]
@@ -43,18 +27,6 @@ model Project {
 
 model Tag {
   id       Int    @id @default(autoincrement()) 
-  name     String @unique
-  projects Project[]
-}
-
-model UserRole {
-  id       Int    @id @default(autoincrement()) 
-  name     String @unique
-  projects Project[]
-}
-
-model ProjectType {
-  id       Int    @id @default(autoincrement())
   name     String @unique
   projects Project[]
 }
