@@ -1,7 +1,11 @@
-export default function ProjectCreatePage() {
-  import { db } from '@/db';
+import { redirect } from 'next/navigation';
+import { db } from '@/db';
 
+export default function ProjectCreatePage() {
   const createProject = async (formData: FormData) => {
+    // ensure function is run on the server
+    'use server';
+
     // validate input
     const title = formData.get('title');
     const type = formData.get('type');
@@ -9,17 +13,37 @@ export default function ProjectCreatePage() {
     const client = formData.get('client');
     const description = formData.get('description');
     const summary = formData.get('summary');
-    const year = formData.get('year');
+    const year = parseInt(formData.get('year'));
+    // const tags = formData.get('tags').split(',');
+    // const newtags = formData
+    //   .get('newtags')
+    //   .split(',')
+    //   .map((tag) => tag.trim());
 
     // create new record in the database
+    const project = await db.project.create({
+      data: {
+        title,
+        type,
+        agency,
+        client,
+        description,
+        summary,
+        year,
+      },
+    });
+
+    console.log('project created', project);
+
     // redirect back to route
+    redirect('/');
   };
 
   return (
     <section>
       <h3>Create a project</h3>
 
-      <form action="">
+      <form action={createProject}>
         <div className="form-item">
           <label htmlFor="title">Title</label>
           <input type="text" id="title" name="title" />
