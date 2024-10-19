@@ -40,6 +40,12 @@ h4 {
   color: var(--primary);
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 form {
   display: flex;
   flex-direction: column;
