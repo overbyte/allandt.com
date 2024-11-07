@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import { db } from '@/db';
 
 interface ProjectPageProps {
@@ -15,12 +16,25 @@ export default async function ProjectPage(props: ProjectPageProps) {
   }
 
   return (
-    <section>
-      <h4>
-        {project.agency} | {project.client} | {project.year}
-      </h4>
+    <section className="p-4">
+      <div className="flex justify-between items-center">
+        <div className="flex flex-col justify-between">
+          <h4 className="mt-2">
+            {project.agency} | {project.client} | {project.year}
+          </h4>
 
-      <h1>{project.title}</h1>
+          <h1 className="text-xl font-bold mb-4">{project.title}</h1>
+        </div>
+
+        <div className="flex gap-4">
+          <Link
+            className="bg-teal text-black p-2 rounded"
+            href={`/projects/${project.id}/edit`}>
+            Edit
+          </Link>
+          <button className="bg-red text-white p-2 rounded">Delete</button>
+        </div>
+      </div>
 
       <p>{project.description}</p>
     </section>

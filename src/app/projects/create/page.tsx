@@ -41,42 +41,75 @@ export default function ProjectCreatePage() {
 
   return (
     <section>
-      <h3>Create a project</h3>
+      <h3 className="font-bold m-3">Create a project</h3>
 
-      <form action={createProject}>
-        <div className="form-item">
-          <label htmlFor="title">Title</label>
-          <input type="text" id="title" name="title" />
+      <form action={createProject} className="flex flex-col gap-4">
+        <div className="flex gap-4">
+          <label className="w-12" htmlFor="title">
+            Title
+          </label>
+          <input
+            className="border rounded p-2 w-full"
+            type="text"
+            id="title"
+            name="title"
+          />
         </div>
 
-        <div className="form-item">
+        <div className="flex gap-4">
           <label htmlFor="type">type</label>
-          <input type="text" id="type" name="type" defaultValue="Developer" />
+          <input
+            className="border rounded p-2 w-full"
+            type="text"
+            id="type"
+            name="type"
+            defaultValue="Developer"
+          />
         </div>
 
-        <div className="form-item">
+        <div className="flex gap-4">
           <label htmlFor="agency">agency</label>
-          <input type="text" id="agency" name="agency" />
+          <input
+            className="border rounded p-2 w-full"
+            type="text"
+            id="agency"
+            name="agency"
+          />
         </div>
 
-        <div className="form-item">
+        <div className="flex gap-4">
           <label htmlFor="client">client</label>
-          <input type="text" id="client" name="client" />
+          <input
+            className="border rounded p-2 w-full"
+            type="text"
+            id="client"
+            name="client"
+          />
         </div>
 
-        <div className="form-item">
+        <div className="flex gap-4">
           <label htmlFor="description">description</label>
-          <textarea id="description" name="description" />
+          <textarea
+            id="description"
+            name="description"
+            className="border rounded p-2 w-full"
+          />
         </div>
 
-        <div className="form-item">
+        <div className="flex gap-4">
           <label htmlFor="summary">summary</label>
-          <input type="text" id="summary" name="summary" />
+          <input
+            className="border rounded p-2 w-full"
+            type="text"
+            id="summary"
+            name="summary"
+          />
         </div>
 
-        <div className="form-item">
+        <div className="flex gap-4">
           <label htmlFor="year">year</label>
           <input
+            className="border rounded p-2 w-full"
             type="number"
             id="year"
             name="year"
@@ -84,12 +117,21 @@ export default function ProjectCreatePage() {
           />
         </div>
 
-        <div className="form-item">
+        <div className="flex gap-4">
           <label htmlFor="video">video</label>
-          <input type="text" id="video" name="video" />
+          <input
+            className="border rounded p-2 w-full"
+            type="text"
+            id="video"
+            name="video"
+          />
         </div>
 
-        <button type="submit">Create</button>
+        <button
+          className="border rounded p-2 bg-orange dark:bg-teal"
+          type="submit">
+          Create
+        </button>
       </form>
     </section>
   );
