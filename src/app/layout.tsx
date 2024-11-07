@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
-import '@/styles/global.scss';
+import Header from '@/components/Header';
+import './globals.css';
 
 const roboto = Roboto({
   weight: ['400', '700'],
@@ -22,10 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
-        <header>Allandt.com</header>
-        <main>{children}</main>
-        <footer>Copyright &copy; {new Date().getFullYear()}</footer>
+      <body className={`${roboto.className} antialiased`}>
+        <Header />
+        <main className="container mx-auto px-12">{children}</main>
+        <footer className="container mx-auto flex justify-center p-12">
+          Copyright &copy; {new Date().getFullYear()}
+        </footer>
       </body>
     </html>
   );
