@@ -35,7 +35,12 @@ export default async function ProjectPage(props: ProjectPageProps) {
             href={`/projects/${project.id}/edit`}>
             Edit
           </Link>
-          <button className="bg-red text-white p-2 rounded">Delete</button>
+
+          <form action={deleteProjectAction}>
+            <button className="bg-red text-white p-2 rounded" type="submit">
+              Delete
+            </button>
+          </form>
         </div>
       </div>
 
