@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { db } from '@/db';
+import ProjectForm from '@/components/project-form';
 
 interface ProjectEditPageProps {
   params: {
@@ -20,7 +21,14 @@ export default async function ProjectEditPage(props: ProjectEditPageProps) {
 
   return (
     <div>
-      editing {id} {project.title}
+      <h1>
+        editing {id} {project.title}
+      </h1>
+      <ProjectForm
+        project={project}
+        action={updateProjectAction}
+        submitLabel="Edit"
+      />
     </div>
   );
 }
