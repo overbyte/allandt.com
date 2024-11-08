@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { db } from '@/db';
+import * as actions from '@/actions';
 import ProjectForm from '@/components/project-form';
 
 interface ProjectEditPageProps {
@@ -18,6 +19,8 @@ export default async function ProjectEditPage(props: ProjectEditPageProps) {
   if (!project) {
     return notFound();
   }
+
+  const updateProjectAction = actions.updateProject.bind(null, project.id);
 
   return (
     <div>

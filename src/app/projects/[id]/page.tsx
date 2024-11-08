@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { db } from '@/db';
+import * as actions from '@/actions';
 
 interface ProjectPageProps {
   params: { id: string };
@@ -14,6 +15,8 @@ export default async function ProjectPage(props: ProjectPageProps) {
   if (!project) {
     return notFound();
   }
+
+  const deleteProjectAction = actions.deleteProject.bind(null, project.id);
 
   return (
     <section className="p-4">
