@@ -3,7 +3,6 @@
 import { redirect } from 'next/navigation';
 import { revalidatePath } from 'next/cache';
 import { db } from '@/db';
-import assert from 'assert';
 
 interface FormFields {
   title: string | undefined;
@@ -47,6 +46,10 @@ const validateForm = ({
   if (typeof summary !== 'string' || summary?.length < 3) {
     return { message: 'Summary is too short' };
   }
+
+  if (typeof year !== 'number') {
+    return { message: 'Year is not a number' };
+  }
 };
 
 export const createProject = async (
@@ -81,7 +84,7 @@ export const createProject = async (
   }
 
   // create new record in the database
-  const project = await db.project.create({
+  await db.project.create({
     data: {
       title,
       type,
@@ -116,7 +119,7 @@ export const updateProject = async (id: number, formData: FormData) => {
   //   .map((tag) => tag.trim());
 
   // update record in the database
-  const project = await db.project.update({
+  await db.project.update({
     where: { id },
     data: {
       title,
