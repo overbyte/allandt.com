@@ -1,6 +1,7 @@
 'use server';
 
 import { redirect } from 'next/navigation';
+import { revalidatePath } from 'next/cache';
 import { db } from '@/db';
 import assert from 'assert';
 
@@ -92,6 +93,9 @@ export const createProject = async (
     },
   });
 
+  // dump existing cache for homepage
+  revalidatePath('/');
+
   // redirect back to route
   redirect('/');
 };
@@ -125,12 +129,19 @@ export const updateProject = async (id: number, formData: FormData) => {
     },
   });
 
+  // dump existing cache for homepage
+  // we need to do this because title and summary appear on homepage
+  revalidatePath('/');
+
   // redirect to project page
   redirect(`/projects/${id}`);
 };
 
 export const deleteProject = async (id: number) => {
   await db.project.delete({ where: { id } });
+
+  // dump existing cache for homepage
+  revalidatePath('/');
 
   // redirect back to route
   redirect('/');
