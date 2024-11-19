@@ -4,15 +4,21 @@ interface ProjectFormProps {
   project?: Project;
   submitLabel?: string;
   action: (formData: FormData) => void;
+  formState?: { message: string };
 }
 
 export default function ProjectForm({
   project,
   action,
   submitLabel = 'Create',
+  formState,
 }: ProjectFormProps) {
   return (
     <form action={action} className="flex flex-col gap-4">
+      {project?.id && (
+        <input type="hidden" name="projectId" value={project.id} />
+      )}
+
       <div className="flex gap-4">
         <label className="w-12" htmlFor="title">
           Title
@@ -101,6 +107,8 @@ export default function ProjectForm({
           defaultValue={project?.video ?? ''}
         />
       </div>
+
+      <div>{formState?.message}</div>
 
       <button
         className="border rounded p-2 bg-orange dark:bg-teal"
