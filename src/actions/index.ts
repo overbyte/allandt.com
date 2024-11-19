@@ -135,6 +135,8 @@ export const updateProject = async (id: number, formData: FormData) => {
   // dump existing cache for homepage
   // we need to do this because title and summary appear on homepage
   revalidatePath('/');
+  // also the edit page should be invalidated
+  revalidatePath(`/projects/${id}`);
 
   // redirect to project page
   redirect(`/projects/${id}`);

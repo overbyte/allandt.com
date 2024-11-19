@@ -48,3 +48,10 @@ export default async function ProjectPage(props: ProjectPageProps) {
     </section>
   );
 }
+
+// create cached versions of the pages
+export async function generateStaticParams() {
+  const projects = await db.project.findMany();
+
+  return projects.map((project) => ({ id: String(project.id) }));
+}
