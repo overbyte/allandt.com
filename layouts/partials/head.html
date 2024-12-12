@@ -1,0 +1,16 @@
+{{ $time := now }} {{ $styles := resources.Get "css/main.css" | toCSS | postCSS
+(dict "config" "./assets/css/postcss.config.js") | resources.ExecuteAsTemplate
+(printf "main.%s.css" $time) $time }}
+
+<head>
+  <meta name="description" content="This is my description" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{.Title}}</title>
+  {{ if hugo.IsServer }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink}}" />
+  {{ else }} {{ $styles := $styles | minify | fingerprint |
+  resources.PostProcess }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink}}" />
+  {{ end }}
+</head>

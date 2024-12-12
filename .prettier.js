@@ -1,0 +1,23 @@
+module.exports = {
+  plugins: ["prettier-plugin-go-template"],
+  overrides: [
+    {
+      files: ["*.html"],
+      options: {
+        parser: "go-template",
+        goTemplateBracketSpacing: true,
+      },
+    },
+    {
+      files: ["*.js", "*.ts"],
+      options: {
+        trailingComma: "es5",
+        tabWidth: 2,
+        semi: true,
+        singleQuote: true,
+        htmlWhitespaceSensitivity: "ignore",
+        bracketSameLine: true,
+      },
+    },
+  ],
+};

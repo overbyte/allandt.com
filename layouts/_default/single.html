@@ -1,0 +1,8 @@
+{{ define "main" }}
+<article class="mx-auto p-4">
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Params.Client }} | {{ .Params.Date }} | {{ .Params.Type }}</p>
+  <h4>{{ .Summary }}</h4>
+  <div>{{ .Content }}</div>
+</article>
+{{ end }}
