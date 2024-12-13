@@ -1,7 +1,7 @@
 +++
 title = 'Test'
 date = 2024-12-11T15:05:22Z
-draft = true
+draft = false
 summary = 'Test content summary.'
 [params]
   type = 'Development'
@@ -11,5 +11,7 @@ summary = 'Test content summary.'
 # This is my content
 
 There are many like it but this one is mine.
+
+![Atomic](atomics.png)
 
 2nd para
