@@ -24,6 +24,7 @@
       <a href="{{ .RelPermalink }}">
         <h3>{{ .Title }}</h3>
         <p>{{ .Summary }}</p>
+        {{ partial "thumbnail" . }}
       </a>
     </li>
     {{ end }}

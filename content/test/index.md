@@ -6,7 +6,10 @@ summary = 'Test content summary.'
 [params]
   type = 'Development'
   client = 'Test Client'
-  projectdate = 2024-11-10
+  agency = 'Publicis'
+  projectdate = 2024-01-01
+  thumbnail = ''
+  video = ''
 +++
 # This is my content
 
