@@ -11,6 +11,7 @@ summary = 'Chrome Kiosk video app driven by rotary encoders'
   thumbnail = ''
   video = ''
 +++
+
 # Lincoln Exclusive
 
 Created a frontend kiosk web application driven by hardware rotary encoder (dials) to select videos to play for the Lincoln stand at The Detroit Auto Show 2016.

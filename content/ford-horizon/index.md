@@ -11,6 +11,7 @@ summary = 'Vue SPA for the Ford Horizon Online Events platform'
   thumbnail = ''
   video = ''
 +++
+
 # Ford Horizon Online Events SPA
 
 Created Vue SPA frontend and CSS layout for Phase 1 of the rollout using internal backend with Auth0 and Twilio integration.

@@ -11,6 +11,7 @@ summary = 'The BST MLB Homerun Derby VR application'
   thumbnail = ''
   video = ''
 +++
+
 # MLB Homerun Derby VR
 
 Managed freelance development to create supporting backend and registration application for MLBAM VR Game. The backend was designed to allow guests to sign up to play the VR Game and would send SMS text messages to welcome, recall and finally, deliver a souvenir combining the guest's photo (taken at registration) and their score from the game.

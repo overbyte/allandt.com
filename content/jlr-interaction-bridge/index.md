@@ -11,6 +11,7 @@ summary = 'Node bridge API for legacy apps'
   thumbnail = ''
   video = ''
 +++
+
 # Jaguar Landrover Interaction Bridge
 
 Created RESTful API used as a translation bridge for legacy applications at Autoshows during internal Imagination platform upgrade

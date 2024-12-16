@@ -11,6 +11,7 @@ summary = 'a front end static website using Fullpage.js with hotspots and multi-
   thumbnail = 'scaliberobot01.jpg'
   video = ''
 +++
+
 # SCA Libero
 
 Created a front end static website using Fullpage.js with hotspots and multi-directional scrolling

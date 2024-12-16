@@ -11,6 +11,7 @@ summary = 'Tech lead for events over 3 years'
   thumbnail = 'mtf.jpg'
   video = ''
 +++
+
 # Shell Eco-Marathon / Make the Future shows
 
 Created and deployed tech for events over 3 years in Manila, Singapore, Rotterdam, London and Detroit

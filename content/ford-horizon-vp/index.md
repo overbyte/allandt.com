@@ -11,6 +11,7 @@ summary = 'Virtual Production for Ford Transit launch video'
   thumbnail = 'ford-transit.png'
   video = ''
 +++
+
 # Ford Horizon Virtual Production
 
-Managed 3rd party teams doing animation (Dandelion & Burdock), art and lighting (Minmud), camera tracking and LED volume (CT) and led internal tech development. 
+Managed 3rd party teams doing animation (Dandelion & Burdock), art and lighting (Minmud), camera tracking and LED volume (CT) and led internal tech development.

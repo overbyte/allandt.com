@@ -11,6 +11,7 @@ summary = 'Tech lead for events over 4 years'
   thumbnail = ''
   video = ''
 +++
+
 # Jaguar Landrover Autoshow CAPEX Programme
 
 Created and deployed tech for Autoshow programme over 4 years in Frankfurt, Paris, Shanghai, New York and LA

@@ -11,7 +11,7 @@ summary = 'Script driven Big-Brother style game'
   thumbnail = 'niknakshak02.jpg'
   video = ''
 +++
+
 # Nik Nak Shak
 
 The Nik Nak Shak was a proof of concept where a bunch of Nik Nak-based characters would move around a house, interact with each other and use room-based context-sensitive actions. I helped define the event-generating backend based on scripts made by the creatives.
-

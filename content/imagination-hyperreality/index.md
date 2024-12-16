@@ -11,6 +11,7 @@ summary = 'Immersive VR Experience'
   thumbnail = 'hyperreality.jpeg'
   video = ''
 +++
+
 # Imagination Hyper-Reality Experience
 
 Architected, Spec’d and Managed 3rd party teams doing animation art (The Mill), audio (GCRS) and internal freelance tech development team.

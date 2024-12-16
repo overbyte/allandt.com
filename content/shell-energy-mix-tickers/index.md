@@ -11,6 +11,7 @@ summary = 'Test content summary.'
   thumbnail = 'tikkers.jpg'
   video = ''
 +++
+
 # Shell Energy Mix Tickers
 
 Created a frontend Electron web application triggered by Leap Motion for the Shell Make the Future entrance.
