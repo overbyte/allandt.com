@@ -1,0 +1,4 @@
+[[language]]
+name = "html"
+language-servers = [ "tailwindcss-ls", "emmet-lsp" ]
+formatter = { command = "prettier", args = [ "--parser", "go-template" ] }
