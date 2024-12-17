@@ -1,34 +1,37 @@
 {{ define "main" }}
-
-<div class="w-svw h-svh flex items-center justify-center bg-red-200 p-4">
-  <div class="container flex mx-auto">
-    <div class="w-full text-center">
-      <h1>Hello</h1>
-      <h3>
-        My name is Allandt (I'll tell you how it's pronounced, if you fancy a
-        chat), a developer living in Hertford, a train-ride away from London.
-      </h3>
-      <h4>
-        I have experience creating front- and back-ends for websites,
-        installations for events and mobile apps.
-      </h4>
+  <div class="w-svw h-svh flex items-center justify-center bg-red-200 p-4">
+    <div class="container flex mx-auto">
+      <div class="w-full text-center">
+        <h1>Hello</h1>
+        <h3>
+          My name is Allandt (I'll tell you how it's pronounced, if you fancy a
+          chat), a developer living in Hertford, a train-ride away from London.
+        </h3>
+        <h4>
+          I have experience creating front- and back-ends for websites,
+          installations for events and mobile apps.
+        </h4>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="container flex mx-auto p-4">
-  {{ .Content }}
-  <ul>
-    {{ range site.RegularPages }}
-    <li>
-      <a href="{{ .RelPermalink }}">
-        <h3>{{ .Title }}</h3>
-        <p>{{ .Summary }}</p>
-        {{ partial "thumbnail" . }}
-      </a>
-    </li>
-    {{ end }}
-  </ul>
-</div>
+  <div class="container flex mx-auto p-4">
+    {{ .Content }}
+    <ul class="flex flex-col gap-4">
+      {{ range site.RegularPages }}
+        {{/* <li class="p-4 bg-slate-50 dark:bg-slate-800"> */}}
 
+
+        <li class="card">
+          <a href="{{ .RelPermalink }}" class="flex gap-4 items-center">
+            {{ partial "thumbnail" . }}
+            <div>
+              <h3>{{ .Title }}</h3>
+              <p>{{ .Summary }}</p>
+            </div>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
 {{ end }}

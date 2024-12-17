@@ -1,12 +1,13 @@
 <!doctype html>
 <html
-  lang="{{ site.Language.LanguageCode}}"
+  lang="{{ site.Language.LanguageCode }}"
   dir="{{ or site.Language.LanguageDirection `ltr` }}"
 >
   {{ partial "head.html" . }}
 
+
   <body>
-    <header class="fixed w-full">
+    <header class="fixed w-full backdrop-blur-md">
       <div class="container flex mx-auto p-4 justify-stretch">
         {{ partial "header.html" . }}
       </div>
