@@ -1,10 +1,10 @@
 {{ define "main" }}
   <div
-    class="w-svw h-svh flex items-center justify-center bg-non-photo-blue text-gunmetal-950 p-4 dark:bg-gunmetal-600 dark:text-white"
+    class="w-svw h-svh flex items-center justify-center bg-blue-munsell text-mint-green p-4 dark:bg-gunmetal-600 dark:text-white"
   >
     <div class="container flex mx-auto">
       <div class="w-full text-center">
-        <h1>Hello</h1>
+        <h1 class="dark:text-brilliant-rose text-3xl">Hello</h1>
         <h3>
           My name is Allandt (I'll tell you how it's pronounced, if you fancy a
           chat), a developer living in Hertford, a train-ride away from London.
@@ -19,7 +19,7 @@
 
   <div class="container flex flex-col gap-4 mx-auto p-4">
     {{ .Content }}
-    <h2 id="projects">Projects</h2>
+    <h2 id="projects" class="scroll-mt-20">Projects</h2>
     <ul
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full"
     >

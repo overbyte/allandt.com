@@ -4,11 +4,11 @@
 
 @layer base {
   :root {
-    --gunmetal: #2b303aff;
-    --non-photo-blue: #92dce5ff;
-    --charteuse: #e0ff4f;
-    --gray: #7c7c7cff;
-    --chili-red: #d64933ff;
+    --mint-green: #d0f4ea;
+    --blue-munsell: #508991;
+    --brilliant-rose: #ff579f;
+    --auburn: #a22522;
+    --gunmetal: #2b303a;
   }
   h1 {
     @apply text-2xl font-bold;
