@@ -1,7 +1,7 @@
 +++
 title = 'Jaguar Landrover Autoshows'
 date = 2024-12-16T09:55:46Z
-draft = true
+draft = false
 summary = 'Tech lead for events over 4 years'
 [params]
   type = 'Tech Lead'

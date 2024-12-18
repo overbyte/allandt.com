@@ -1,7 +1,7 @@
 +++
 title = 'Jaguar Landrover Interaction Bridge'
 date = 2024-12-16T09:55:48Z
-draft = true
+draft = false
 summary = 'Node bridge API for legacy apps'
 [params]
   type = 'Development'

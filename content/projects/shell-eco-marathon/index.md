@@ -1,7 +1,7 @@
 +++
 title = 'Shell Eco Marathon'
 date = 2024-12-16T09:55:46Z
-draft = true
+draft = false
 summary = 'Tech lead for events over 3 years'
 [params]
   type = 'Tech Lead'

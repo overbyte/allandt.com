@@ -1,7 +1,7 @@
 +++
 title = 'Imagination Hyper-Reality Experience'
 date = 2024-12-16T09:55:48Z
-draft = true
+draft = false
 summary = 'Immersive VR Experience'
 [params]
   type = 'Tech Lead'

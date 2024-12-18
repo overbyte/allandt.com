@@ -1,7 +1,7 @@
 +++
 title = 'Niknak Shak'
 date = 2024-12-16T09:44:31Z
-draft = true
+draft = false
 summary = 'Script driven Big-Brother style game'
 [params]
   type = 'Development'

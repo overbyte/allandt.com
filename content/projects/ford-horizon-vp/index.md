@@ -1,7 +1,7 @@
 +++
 title = 'Ford Horizon VP'
 date = 2024-12-16T09:55:48Z
-draft = true
+draft = false
 summary = 'Virtual Production for Ford Transit launch video'
 [params]
   type = 'Tech Lead'

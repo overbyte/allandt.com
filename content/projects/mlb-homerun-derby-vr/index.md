@@ -1,7 +1,7 @@
 +++
 title = 'MLB Homerun Derby VR'
 date = 2024-12-16T09:55:46Z
-draft = true
+draft = false
 summary = 'The BST MLB Homerun Derby VR application'
 [params]
   type = 'Tech Lead'

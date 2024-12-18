@@ -1,7 +1,7 @@
 +++
 title = 'Ford Horizon'
 date = 2024-12-16T09:55:48Z
-draft = true
+draft = false
 summary = 'Vue SPA for the Ford Horizon Online Events platform'
 [params]
   type = 'Development'

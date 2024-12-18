@@ -1,7 +1,7 @@
 +++
 title = 'Colgate Express Yourself'
 date = 2024-12-16T09:45:14Z
-draft = true
+draft = false
 summary = 'Flash game'
 [params]
   type = 'Development'

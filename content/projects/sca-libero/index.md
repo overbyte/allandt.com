@@ -1,7 +1,7 @@
 +++
 title = 'SCA Libero'
 date = 2024-12-16T09:44:54Z
-draft = true
+draft = false
 summary = 'a front end static website using Fullpage.js with hotspots and multi-directional scrolling'
 [params]
   type = 'Development'

@@ -1,8 +1,8 @@
 +++
 title = 'The Times Spelling Bee'
 date = 2024-12-16T09:55:45Z
-draft = true
-summary = 'Test content summary.'
+draft = false
+summary = 'Flash Spelling Bee game framwork with 3 games'
 [params]
   type = 'Development'
   client = 'The Times'
