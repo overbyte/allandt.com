@@ -7,11 +7,10 @@ summary = 'Tech lead for events over 4 years'
   type = 'Tech Lead'
   client = 'Jaguar Landrover'
   agency = 'Imagination'
-  projectdate = 2019-01-01
-  thumbnail = ''
+  year = '2019'
   video = ''
 +++
 
-# Jaguar Landrover Autoshow CAPEX Programme
+# Jaguar Landrover Autoshow CapEx Programme
 
 Created and deployed tech for Autoshow programme over 4 years in Frankfurt, Paris, Shanghai, New York and LA

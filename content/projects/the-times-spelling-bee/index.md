@@ -7,8 +7,7 @@ summary = 'Test content summary.'
   type = 'Development'
   client = 'The Times'
   agency = 'ID Media'
-  projectdate = 2008-01-01
-  thumbnail = ''
+  year = '2008'
   video = ''
 +++
 

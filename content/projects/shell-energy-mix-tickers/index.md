@@ -7,8 +7,7 @@ summary = 'Test content summary.'
   type = 'Development'
   client = 'Shell UK'
   agency = 'Imagination'
-  projectdate = 2017-01-01
-  thumbnail = 'tikkers.jpg'
+  year = '2017'
   video = ''
 +++
 

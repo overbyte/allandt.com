@@ -7,8 +7,7 @@ summary = 'Immersive VR Experience'
   type = 'Tech Lead'
   client = 'Imagination'
   agency = 'Imagination'
-  projectdate = 2017-01-01
-  thumbnail = 'hyperreality.jpeg'
+  year = '2017'
   video = ''
 +++
 

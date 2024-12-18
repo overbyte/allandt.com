@@ -7,8 +7,7 @@ summary = 'Virtual Production for Ford Transit launch video'
   type = 'Tech Lead'
   client = 'Ford'
   agency = 'Imagination'
-  projectdate = 2020-01-01
-  thumbnail = 'ford-transit.png'
+  year = '2020'
   video = ''
 +++
 

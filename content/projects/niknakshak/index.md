@@ -7,11 +7,8 @@ summary = 'Script driven Big-Brother style game'
   type = 'Development'
   client = 'KP Brand'
   agency = 'Publicis'
-  projectdate = 2014-01-01
-  thumbnail = 'niknakshak02.jpg'
+  year = '2014'
   video = ''
 +++
-
-# Nik Nak Shak
 
 The Nik Nak Shak was a proof of concept where a bunch of Nik Nak-based characters would move around a house, interact with each other and use room-based context-sensitive actions. I helped define the event-generating backend based on scripts made by the creatives.

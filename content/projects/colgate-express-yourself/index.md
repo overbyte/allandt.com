@@ -7,8 +7,7 @@ summary = 'Flash game'
   type = 'Development'
   client = 'Test Client'
   agency = 'Do Tank Studios'
-  projectdate = 2011-01-01
-  thumbnail = 'fashionfauxpas.jpg'
+  year = '2011'
   video = ''
 +++
 

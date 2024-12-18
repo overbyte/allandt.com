@@ -7,8 +7,7 @@ summary = 'Vue SPA for the Ford Horizon Online Events platform'
   type = 'Development'
   client = 'Ford'
   agency = 'Imagination'
-  projectdate = 2020-01-01
-  thumbnail = ''
+  year = '2020'
   video = ''
 +++
 

@@ -7,8 +7,7 @@ summary = 'Node bridge API for legacy apps'
   type = 'Development'
   client = 'Jaguar Landrover'
   agency = 'Imagination'
-  projectdate = 2016-01-01
-  thumbnail = ''
+  year = '2016'
   video = ''
 +++
 
