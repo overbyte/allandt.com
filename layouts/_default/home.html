@@ -17,8 +17,9 @@
     </div>
   </div>
 
-  <div class="container flex mx-auto p-4">
+  <div class="container flex flex-col gap-4 mx-auto p-4">
     {{ .Content }}
+    <h2 id="projects">Projects</h2>
     <ul
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full"
     >
@@ -26,7 +27,7 @@
         <li class="card">
           <a href="{{ .RelPermalink }}" class="card-content">
             {{ partial "thumbnail" . }}
-            <h3 class="mt-4">{{ .Title }}</h3>
+            <h3>{{ .Title }}</h3>
             <p>{{ .Summary }}</p>
           </a>
         </li>
