@@ -22,6 +22,9 @@
   h4 {
     @apply font-bold;
   }
+  a {
+    @apply hover:text-brilliant-rose transition-colors;
+  }
 }
 
 @layer components {
