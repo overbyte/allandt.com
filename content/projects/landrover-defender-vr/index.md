@@ -8,8 +8,7 @@ summary = 'Defender VR Experience'
   client = 'Jaguar Landrover'
   agency = 'Imagination'
   projectdate = 2019-01-01
-  thumbnail = 'vrlo-defender-vr.jpg'
-  video = ''
+  video = 'Zj9s7I-7NDQ'
 +++
 
 # Landrover Defender VR Experience

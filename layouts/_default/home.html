@@ -26,7 +26,20 @@
       {{ range site.RegularPages }}
         <li class="card">
           <a href="{{ .RelPermalink }}" class="card-content">
-            {{ partial "thumbnail" . }}
+            {{ with .Params.video }}
+              <iframe
+                id="ytplayer"
+                class="w-full aspect-video mb-4"
+                type="text/html"
+                width="640"
+                src="https://www.youtube.com/embed/{{ . }}?autoplay=1&origin=http://allandt.com"
+                frameborder="0"
+                allow="fullscreen"
+                loading="lazy"
+              ></iframe>
+            {{ else }}
+              {{ partial "thumbnail" . }}
+            {{ end }}
             <h3>{{ .Title }}</h3>
             <p>{{ .Summary }}</p>
           </a>

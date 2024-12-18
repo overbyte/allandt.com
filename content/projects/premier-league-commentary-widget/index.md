@@ -8,8 +8,7 @@ summary = 'Commentary Widget for the Premier League website'
   client = 'Test Client'
   agency = ''
   projectdate = 2024-11-10
-  thumbnail = 'premierleague01.jpg'
-  video = ''
+  video = 'L-hyRjEjSMc'
 +++
 
 # Premier League Commentary Widget
