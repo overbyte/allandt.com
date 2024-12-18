@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./content/**/*.md", "./layouts/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        ubuntu: ["Ubuntu", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };

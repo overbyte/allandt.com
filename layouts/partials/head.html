@@ -1,16 +1,27 @@
-{{ $time := now }} {{ $styles := resources.Get "css/main.css" | toCSS | postCSS
-(dict "config" "./assets/css/postcss.config.js") | resources.ExecuteAsTemplate
-(printf "main.%s.css" $time) $time }}
+{{ $time := now }}
+{{ $styles := resources.Get "css/main.css" | toCSS | postCSS
+  (dict "config" "./assets/css/postcss.config.js") | resources.ExecuteAsTemplate
+  (printf "main.%s.css" $time) $time
+}}
+
 
 <head>
   <meta name="description" content="This is my description" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{.Title}}</title>
+  <title>{{ .Title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
   {{ if hugo.IsServer }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink}}" />
-  {{ else }} {{ $styles := $styles | minify | fingerprint |
-  resources.PostProcess }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink}}" />
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+  {{ else }}
+    {{ $styles := $styles | minify | fingerprint |
+      resources.PostProcess
+    }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
   {{ end }}
 </head>
