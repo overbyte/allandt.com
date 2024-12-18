@@ -31,5 +31,5 @@ shift "$((OPTIND - 1))"
 
 for PAGE in $PAGES; do
 echo $PAGE
-hugo new content $PAGE/index.md
+hugo new content projects/$PAGE/index.md
 done
