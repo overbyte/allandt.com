@@ -9,11 +9,17 @@
       <div class="mt-8">{{ .Content }}</div>
     </div>
 
-    <div class="mt-8 flex w-full overflow-x-auto snap-x snap-mandatory">
+    <div
+      class="mt-8 flex justify-center w-full touch-pan-x overflow-x-auto snap-x snap-proximity"
+    >
       {{ with .Resources }}
         {{ range .ByType "image" }}
           {{ $image := .Resize "x300" }}
-          <img src="{{ $image.Permalink }}" class="snap-center shrink-0" />
+          <img
+            src="{{ $image.Permalink }}"
+            class="snap-center shrink-0 select-none"
+            draggable="false"
+          />
         {{ end }}
       {{ end }}
     </div>
