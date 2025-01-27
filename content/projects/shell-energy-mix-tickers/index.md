@@ -10,6 +10,6 @@ summary = 'Electron Leap Motion ticker application'
   video = ''
 +++
 
-# Shell Energy Mix Tickers
-
 Created a frontend Electron web application triggered by Leap Motion for the Shell Make the Future entrance.
+
+{{< youtube 2-4nIzPcbz4  >}}
