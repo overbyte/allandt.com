@@ -1,5 +1,5 @@
 {{ with .Resources }}
-  {{ with .GetMatch "{cover.*,*.jpg,*.png,*.jpeg}" }}
+  {{ with .GetMatch "{cover.*,*.jpg,*.png,*.jpeg,*.gif}" }}
     {{ $cover := .Resize "300x" }}
     {{ with $cover }}<img src="{{ .Permalink }}" class="mb-4" />{{ end }}
   {{ end }}
