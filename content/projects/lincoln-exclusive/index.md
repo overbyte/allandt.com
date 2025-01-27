@@ -7,7 +7,6 @@ summary = 'Chrome Kiosk video app driven by rotary encoders'
   type = 'Frontend'
   client = 'Lincoln'
   agency = 'Imagination'
-  year = '2016'
   video = ''
 +++
 

@@ -7,7 +7,6 @@ summary = 'Immersive VR Experience'
   type = 'Tech Lead'
   client = 'Imagination'
   agency = 'Imagination'
-  year = '2017'
   video = ''
 +++
 

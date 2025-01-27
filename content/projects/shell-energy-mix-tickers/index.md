@@ -7,7 +7,6 @@ summary = 'Electron Leap Motion ticker application'
   type = 'Frontend'
   client = 'Shell UK'
   agency = 'Imagination'
-  year = '2017'
   video = ''
 +++
 

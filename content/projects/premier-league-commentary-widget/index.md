@@ -7,7 +7,6 @@ summary = 'Commentary Widget for the Premier League website'
   type = 'Flash'
   client = 'Premier League'
   agency = 'VML'
-  year= '2011'
   video = 'L-hyRjEjSMc'
 +++
 

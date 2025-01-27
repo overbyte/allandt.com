@@ -7,7 +7,6 @@ summary = 'Node bridge API for legacy apps'
   type = 'Backend'
   client = 'Jaguar Landrover'
   agency = 'Imagination'
-  year = '2016'
   video = ''
 +++
 

@@ -7,7 +7,6 @@ summary = 'Defender VR Experience'
   type = 'Tech Lead'
   client = 'Jaguar Landrover'
   agency = 'Imagination'
-  year = '2019'
   video = 'Zj9s7I-7NDQ'
 +++
 

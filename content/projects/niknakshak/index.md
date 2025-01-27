@@ -1,13 +1,12 @@
 +++
 title = 'Niknak Shak'
-date = 2024-12-16T09:44:31Z
+date = 2014-12-16T09:44:31Z
 draft = false
 summary = 'Script driven Big-Brother style game'
 [params]
   type = 'Frontend'
   client = 'KP Brand'
   agency = 'Publicis'
-  year = '2014'
   video = ''
 +++
 

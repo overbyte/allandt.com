@@ -7,7 +7,6 @@ summary = 'Tech lead for events over 4 years'
   type = 'Tech Lead'
   client = 'Jaguar Landrover'
   agency = 'Imagination'
-  year = '2019'
   video = ''
 +++
 

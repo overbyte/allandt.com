@@ -7,6 +7,5 @@ summary = ''
   type = 'Frontend'
   client = ''
   agency = ''
-  year = '2025'
   video = ''
 +++

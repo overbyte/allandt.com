@@ -7,7 +7,6 @@ summary = 'Flash ‘Game-and-Watch’ style game for use on Microsoft Surface'
   type = 'Flash'
   client = 'Shell UK'
   agency = 'Imagination'
-  year = '2015'
   video = ''
 +++
 

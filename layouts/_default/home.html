@@ -23,7 +23,7 @@
     <ul
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full"
     >
-      {{ range site.RegularPages }}
+      {{ range site.RegularPages.ByDate.Reverse }}
         <li class="card">
           <a href="{{ .RelPermalink }}" class="card-content">
             {{ with .Params.video }}

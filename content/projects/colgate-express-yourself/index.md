@@ -7,7 +7,6 @@ summary = 'Flash game'
   type = 'Flash'
   client = 'Colgate'
   agency = 'Do Tank Studios'
-  year = '2011'
   video = ''
 +++
 

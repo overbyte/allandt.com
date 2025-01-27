@@ -7,7 +7,6 @@ summary = 'Tech lead for events over 3 years'
   type = 'Tech Lead'
   client = 'Shell UK'
   agency = 'Imagination'
-  year = '2017'
   video = ''
 +++
 

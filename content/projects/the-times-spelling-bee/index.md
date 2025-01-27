@@ -7,7 +7,6 @@ summary = 'Flash Spelling Bee game framwork with 3 games'
   type = 'Flash'
   client = 'The Times'
   agency = 'ID Media'
-  year = '2008'
   video = ''
 +++
 

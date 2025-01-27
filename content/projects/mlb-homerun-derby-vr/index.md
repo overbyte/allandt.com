@@ -7,7 +7,6 @@ summary = 'The BST MLB Homerun Derby VR application'
   type = 'Tech Lead'
   client = 'MLB'
   agency = 'Imagination'
-  year = '2017'
   video = ''
 +++
 
