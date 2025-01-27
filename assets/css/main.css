@@ -25,6 +25,9 @@
   a {
     @apply hover:text-brilliant-rose transition-colors;
   }
+  p {
+    @apply mb-2;
+  }
 }
 
 @layer components {
