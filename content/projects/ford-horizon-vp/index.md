@@ -1,6 +1,6 @@
 +++
 title = 'Ford Horizon VP'
-date = 2024-12-16T09:55:48Z
+date = 2020-01-01T09:30:00Z
 draft = false
 summary = 'Virtual Production for Ford Transit launch video'
 [params]

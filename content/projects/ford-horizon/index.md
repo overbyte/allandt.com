@@ -1,10 +1,10 @@
 +++
 title = 'Ford Horizon'
-date = 2024-12-16T09:55:48Z
+date = 2020-01-01T09:30:00Z
 draft = false
 summary = 'Vue SPA for the Ford Horizon Online Events platform'
 [params]
-  type = 'Development'
+  type = 'Frontend'
   client = 'Ford'
   agency = 'Imagination'
   year = '2020'

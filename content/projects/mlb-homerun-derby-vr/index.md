@@ -1,6 +1,6 @@
 +++
 title = 'MLB Homerun Derby VR'
-date = 2024-12-16T09:55:46Z
+date = 2017-01-01T09:30:00Z
 draft = false
 summary = 'The BST MLB Homerun Derby VR application'
 [params]

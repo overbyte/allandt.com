@@ -1,10 +1,10 @@
 +++
 title = 'Premier League Commentary Widget'
-date = 2024-12-10T13:57:42Z
+date = 2011-01-01T09:30:00Z
 draft = false
 summary = 'Commentary Widget for the Premier League website'
 [params]
-  type = 'Development'
+  type = 'Flash'
   client = 'Premier League'
   agency = 'VML'
   year= '2011'

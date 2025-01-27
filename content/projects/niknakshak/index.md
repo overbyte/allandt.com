@@ -4,7 +4,7 @@ date = 2024-12-16T09:44:31Z
 draft = false
 summary = 'Script driven Big-Brother style game'
 [params]
-  type = 'Development'
+  type = 'Frontend'
   client = 'KP Brand'
   agency = 'Publicis'
   year = '2014'

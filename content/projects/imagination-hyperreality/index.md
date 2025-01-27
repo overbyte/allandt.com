@@ -1,6 +1,6 @@
 +++
 title = 'Imagination Hyper-Reality Experience'
-date = 2024-12-16T09:55:48Z
+date = 2017-01-01T09:30:00Z
 draft = false
 summary = 'Immersive VR Experience'
 [params]

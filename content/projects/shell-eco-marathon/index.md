@@ -1,6 +1,6 @@
 +++
 title = 'Shell Eco Marathon'
-date = 2024-12-16T09:55:46Z
+date = 2017-01-01T09:30:00Z
 draft = false
 summary = 'Tech lead for events over 3 years'
 [params]

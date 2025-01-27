@@ -1,11 +1,11 @@
 +++
 title = 'Colgate Express Yourself'
-date = 2024-12-16T09:45:14Z
+date = 2011-01-01T09:30:00Z
 draft = false
 summary = 'Flash game'
 [params]
-  type = 'Development'
-  client = 'Test Client'
+  type = 'Flash'
+  client = 'Colgate'
   agency = 'Do Tank Studios'
   year = '2011'
   video = ''

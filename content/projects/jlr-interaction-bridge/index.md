@@ -1,10 +1,10 @@
 +++
 title = 'Jaguar Landrover Interaction Bridge'
-date = 2024-12-16T09:55:48Z
+date = 2016-01-01T09:30:00Z
 draft = false
 summary = 'Node bridge API for legacy apps'
 [params]
-  type = 'Development'
+  type = 'Backend'
   client = 'Jaguar Landrover'
   agency = 'Imagination'
   year = '2016'

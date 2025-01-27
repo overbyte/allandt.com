@@ -1,10 +1,10 @@
 +++
 title = 'Shell Goodwood Flash Game'
-date = 2024-12-16T09:55:46Z
+date = 2015-01-01T09:30:00Z
 draft = false
 summary = 'Flash ‘Game-and-Watch’ style game for use on Microsoft Surface'
 [params]
-  type = 'Development'
+  type = 'Flash'
   client = 'Shell UK'
   agency = 'Imagination'
   year = '2015'

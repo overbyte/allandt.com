@@ -1,10 +1,10 @@
 +++
 title = 'Shell Energy Mix Tickers'
-date = 2024-12-16T09:55:46Z
+date = 2017-01-01T09:30:00Z
 draft = false
 summary = 'Electron Leap Motion ticker application'
 [params]
-  type = 'Development'
+  type = 'Frontend'
   client = 'Shell UK'
   agency = 'Imagination'
   year = '2017'
