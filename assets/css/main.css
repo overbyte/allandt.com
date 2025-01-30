@@ -25,9 +25,6 @@
   a {
     @apply hover:text-brilliant-rose transition-colors;
   }
-  p {
-    @apply mb-2;
-  }
 }
 
 @layer components {
@@ -36,5 +33,23 @@
   }
   .card-content {
     @apply h-full text-center flex flex-col items-center justify-center;
+  }
+  .article-content {
+    h1 {
+      @apply mt-2 mb-4;
+    }
+    h2,
+    h3,
+    h4 {
+      @apply my-4;
+    }
+
+    p {
+      @apply my-2;
+    }
+
+    div {
+      @apply mb-8;
+    }
   }
 }
