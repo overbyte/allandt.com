@@ -1,7 +1,7 @@
 +++
 title = 'CRH Full Potential'
 date = 2024-12-12T09:30:00Z
-draft = true
+draft = false
 summary = 'Multi-screen Team-based Priotisation Exercise'
 [params]
   type = 'Fullstack'
