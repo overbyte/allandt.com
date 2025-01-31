@@ -53,3 +53,30 @@
     }
   }
 }
+
+@view-transition {
+  navigation: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #434e61;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  background-color: rgba(255, 87, 159, 0.8);
+  transition: background-color 0.5s;
+  border-radius: 8px;
+  border: 3px solid transparent;
+
+  &:hover {
+    background-color: rgba(255, 87, 159, 1);
+  }
+}
