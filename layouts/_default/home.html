@@ -36,6 +36,7 @@
                 frameborder="0"
                 allow="fullscreen"
                 loading="lazy"
+                title="Video Thumbnail of {{ .Title }}"
               ></iframe>
             {{ else }}
               {{ partial "thumbnail" . }}
@@ -64,12 +65,20 @@
     </p>
     <ul class="flex gap-4 justify-center">
       <li>
-        <a href="https://linkedin.com/in/allandt" target="_blank">
+        <a
+          href="https://linkedin.com/in/allandt"
+          aria-label="Go to Allandt's LinkedIn Profile"
+          target="_blank"
+        >
           {{ partial "svg" "linkedin" }}
         </a>
       </li>
       <li>
-        <a href="https://github.com/overbyte/" target="_blank">
+        <a
+          href="https://github.com/overbyte/"
+          aria-label="Go to Allandt's Github Profile"
+          target="_blank"
+        >
           {{ partial "svg" "github" }}
         </a>
       </li>
