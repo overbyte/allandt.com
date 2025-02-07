@@ -1,5 +1,5 @@
 <nav
-  class="flex flex-col md:flex-row items-baseline md:justify-between gap-4 w-full overflow-clip max-h-60 transition-all duration-300 ease-in-out relative has-[:checked]:max-h-8"
+  class="flex flex-col md:flex-row items-baseline md:justify-between gap-4 w-full overflow-clip transition-all duration-300 ease-in-out relative max-h-7 has-[:checked]:max-h-60"
 >
   <div>
     <a href="{{ .Site.BaseURL }}">allandt.com</a>
@@ -9,7 +9,7 @@
     <input
       id="nav-close"
       type="checkbox"
-      class="fixed w-0 h-0 opacity-0 [&:checked+label>.closed]:hidden [&:checked+label>.opened]:block"
+      class="fixed w-0 h-0 opacity-0 [&:checked+label>.opened]:hidden [&:checked+label>.closed]:block"
       tabindex="-1"
     />
 
@@ -17,10 +17,12 @@
       for="nav-close"
       class="w-6 h-6 flex justify-center items-center cursor-pointer"
     >
-      <span class="opened hidden w-full h-full">
+      <span class="opened w-full h-full">
         {{ partial "svg" "hamburger" }}
       </span>
-      <span class="closed w-full h-full">{{ partial "svg" "close" }}</span>
+      <span class="closed hidden w-full h-full"
+        >{{ partial "svg" "close" }}</span
+      >
     </label>
   </div>
 
